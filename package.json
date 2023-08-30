@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && node server.js",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "private": true,
   "dependencies": {
