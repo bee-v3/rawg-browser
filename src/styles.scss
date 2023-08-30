@@ -1,0 +1,75 @@
+body{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #151515;
+    padding-top: 60px;
+    height: 100%;
+}
+
+body * {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mat-form-field-infix{
+    background-color: #3f51b5;
+    border-color: #fff !important;
+    border-top: none;
+    margin-top: 10px ;
+    padding-left: 5px !important;
+}
+
+.mat-select-value, .mat-select-arrow,
+.mat-form-field-hide-placeholder, .mat-select-placeholder,
+.mat-form-field-appearance-legacy, .mat-form-field-label {
+    color: #fff;
+    opacity: 1;
+}
+
+
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    padding-left: 5px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #fff !important;
+}
+
+.details {
+    mwl-gauge {
+      width: 150px;
+      height: 150px;
+      display: block;
+      padding: 10px;
+  
+      .dial {
+        stroke-width: 10;
+      }
+  
+      .value {
+        stroke-dasharray: none;
+        stroke-width: 13;
+      }
+  
+      .value-text {
+        fill: #fff;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+  
+    .game-gauge {
+      position: absolute;
+      top: 50px;
+      right: 0;
+  
+      &-label {
+        font-size: 20px;
+        color: #fff;
+        position: relative;
+        bottom: 60px;
+      }
+    }
+  }
